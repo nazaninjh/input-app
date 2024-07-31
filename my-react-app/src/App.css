@@ -1,0 +1,85 @@
+#root {
+  --gray: rgb(237, 237, 237);
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.form-container  {
+
+  padding: 1rem;
+  border: gray 1px solid;
+  width: fit-content;
+}
+.form-container form > * {
+  margin: 1rem;
+}
+.construct-dimentions {
+  padding: 0.5rem;
+  text-align: end;
+  border-bottom: 1px var(--gray) solid;
+}
+.height-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.height-container .btn-cont {
+  display: flex;
+  justify-content: space-between;
+  
+  width: 100%;
+}
+.height-container .input-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+ 
+  gap: 0.5rem;
+}
+.height-container .input-cont #scope {
+  position: absolute;
+  align-self: flex-start;
+  right: 110%;
+  top: 1rem;
+  padding: 0.5rem;
+  background-color: var(--gray);
+}
+.height-container input {
+  text-align: center;
+  background-color: var(--gray);
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  margin: 0;
+}
+
+.width-container {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.width-container > .input-cont {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.form-container .submit-btns {
+  display: flex;
+
+  justify-content: space-around;
+  
+}
+.form-container > form > .submit-btns button {
+  padding: 0.5rem 1rem;
+  border: gray 1.5px solid;
+}
